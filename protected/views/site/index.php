@@ -5,4 +5,6 @@
 </h1>
 
 <p>
-<?php echo CHtml::link("about", array('site/page/view/about')); ?>
+<?php echo CHtml::link("about via 'site/page/view/about'", array('site/page/view/about')); ?>
+<p>
+<?php echo CHtml::link("about via 'view/about'", array('view/about')); ?>

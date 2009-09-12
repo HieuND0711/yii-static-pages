@@ -36,6 +36,9 @@ return array(
         'urlManager' => array(
 			'urlFormat' => 'path',
 			'showScriptName' => false,
+			'rules'=>array(
+			    'view/<view:.*>'=>'site/page',
+			),
 		),
 		// uncomment the following to set up database
 		/*
@@ -48,7 +51,6 @@ return array(
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
-		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 	),
 );
