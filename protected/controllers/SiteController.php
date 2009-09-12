@@ -20,7 +20,7 @@ class SiteController extends CController {
 			if ($contact->validate()) {
 				$headers = "From: {$contact->email}\r\nReply-To: {$contact->email}";
 				mail(Yii::app()->params['adminEmail'], $contact->subject, $contact->body, $headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us.');
+				Yii::app()->user->setFlash('contact', 'Thank you for contacting us.');
 				$this->refresh();
 			}
 		}
@@ -30,11 +30,11 @@ class SiteController extends CController {
 	public function actionLogin() {
 		$form = new LoginForm;
 		if (isset($_POST['LoginForm'])) {
-			$form->attributes=$_POST['LoginForm'];
+			$form->attributes = $_POST['LoginForm'];
 			if ($form->validate())
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
-		$this->render('login',array('form'=>$form));
+		$this->render('login', array('form'=>$form));
 	}
 
 	public function actionLogout() {
