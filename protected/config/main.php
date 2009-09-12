@@ -33,6 +33,10 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+        'urlManager' => array(
+			'urlFormat' => 'path',
+			'showScriptName' => false,
+		),
 		// uncomment the following to set up database
 		/*
 		'db'=>array(
