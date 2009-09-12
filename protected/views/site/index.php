@@ -11,4 +11,4 @@
 <p>
 <?php echo CHtml::link("view/more/info via 'view/more.info'", array('view/more.info')); ?>
 <p>
-<?php echo CHtml::link("view/more/info via 'view/more/info' (broken)", array('view/more/info')); ?>
+<?php echo CHtml::link("view/more/info via 'view/more/info'", array('view/more/info')); ?>

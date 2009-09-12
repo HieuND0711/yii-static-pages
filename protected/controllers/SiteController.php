@@ -5,7 +5,7 @@ class SiteController extends CController {
 	public function actions() {
 		return array(
 			'captcha'=>array('class'=>'CCaptchaAction',	'backColor'=>0xEBF4FB),
-			'page'=>array('class'=>'CViewAction'),
+			'page'=>array('class'=>'SiteView'),
 		);
 	}
 
